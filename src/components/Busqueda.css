@@ -1,0 +1,29 @@
+.busqueda-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.busqueda-input, .busqueda-button {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+    .busqueda-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .busqueda-input, .busqueda-button {
+        margin-bottom: 0;
+        margin-right: 1em;
+    }
+
+    .busqueda-button {
+        margin-right: 0;
+    }
+}
